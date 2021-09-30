@@ -1,0 +1,69 @@
+@import '../App.scss';
+
+.movie {
+  width: 300px;
+  margin: 25px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.movie__img {
+  width: 300px;
+  height: 300px;
+}
+
+.movie__details {
+  padding: 35px 15px 10px;
+  margin-top: -35px;
+  background-color: $danger-color;
+}
+
+.movie__details-star {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -25px;
+  left: 245px;
+}
+
+.movie__details-star.favorite {
+  fill: $success-color;
+}
+
+.movie__details-star.favorite:hover {
+  fill: $light-color;
+}
+
+.movie__details-star.noFavorite {
+  fill: $light-color;
+}
+
+.movie__details-star.noFavorite:hover {
+  fill: $success-color;
+}
+
+.movie__details-name {
+  margin: 0;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 21px;
+}
+
+.movie__details__item {
+  margin: 5px 0;
+}
+
+.movie__details__item-more {
+  text-align: end;
+}
+
+.movie__details__item-more:hover {
+  cursor: pointer;
+  color: $secondary-color;
+}
+
+.movie__details__item-type {
+  color: $success-color;
+  font-weight: bolder;
+}

@@ -1,0 +1,6 @@
+@import '../App.scss';
+
+.movieList {
+  @include flexCenCen;
+  flex-wrap: wrap;
+}

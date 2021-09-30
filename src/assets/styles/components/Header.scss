@@ -1,0 +1,40 @@
+@import '../App.scss';
+
+.header {
+  @include colCenCen;
+  display: flex;
+  flex-direction: row;
+}
+
+.header__logo-img {
+  width: 100px;
+  height: auto;
+}
+
+.header__nav__options {
+  @include flexCenCen;
+  padding: 0px;
+}
+
+.header__nav__options-item {
+  margin-right: 25px;
+  font-size: 15px;
+  font-family: $title-font;
+  list-style-type: none;
+}
+
+.header__nav__options-item.active {
+  color: $success-color
+}
+
+.header__nav__options-item:first-child {
+  margin-left: 20px;
+}
+.header__nav__options-item:last-child {
+  margin-right: 0;
+}
+
+.header__nav__options-item:hover {
+  cursor: pointer;
+  color: $success-color;
+}

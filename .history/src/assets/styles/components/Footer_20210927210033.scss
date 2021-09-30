@@ -1,0 +1,27 @@
+@import '../App.scss';
+
+.footer {
+  @include flexBetCen;
+  margin: 0 20px;
+  height: 75px;
+}
+
+.footer__made {
+  @include flexStaSta;
+}
+
+.logo {
+ width: 45px;
+ height: 45px;
+ object-fit: cover;
+}
+
+.logo-img {
+  color: #00a9e6;
+}
+
+.footer__location {
+  span {
+    color: #14b600;
+  }
+}
